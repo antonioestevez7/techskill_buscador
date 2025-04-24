@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechSkill Buscador de Simuladores RV/RA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/techskill_icono.png" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/techskill_icono.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/techskill_icono.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/techskill_icono.png">
+<!--icono redes-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+  <div class="header-wrapper">
+    <div class="switch-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-theme" />
+        <span class="slider">
+          <span class="icon sol">☀️</span>
+          <span class="icon luna">🌙</span>
+        </span>
+      </label>
+      <span class="modo-label">Modo claro</span>
+    </div>
+
+    <div class="header-content">
+  <img src="img/techskill-imagen.png" alt="TechSkill Logo" class="logo-header" />
+  <div class="texto-header">
+    <h1>Buscador de Simuladores de Realidad Virtual y Aumentada</h1>
+    <p class="subtitulo">Filtra por sector para encontrar soluciones inmersivas adaptadas a la industria</p>
+  </div>
+</div>
+
+
+  </div>
+
+</header>
+
+
+
+  <section class="buscador">
+  <div class="search-wrapper">
+    <i class="fas fa-search"></i>
+    <input type="text" id="filtro" placeholder="Buscar simuladores, empresas, tecnologías..." />
+  </div>
+</section>
+
+<div id="mensaje-no-resultados" class="mensaje-no-resultados" style="display: none;">
+  🔍 No se encontraron simuladores para "<span id="texto-buscado"></span>"
+</div>
+
+  <main id="sectores">
+
+    <!-- Soldadura y Pintura -->
+    <section class="sector soldadura">
+      <h2>Soldadura y Pintura</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+        <article class="simulador" data-keywords="soldadura realidad virtual ar vr soldamatic seabery welding">
+        <a href="https://seaberyat.com/welding-simulator-soldamatic/es/?utm_source=Google&utm_medium=ads&utm_campaign=ES_WLD_SSA_Brand&utm_id=Seabery&utm_term=soldamatic&utm_content=Brand&gad_source=1&gbraid=0AAAAABUXvRlmSRBZuCb7jOrvZF-WeIf1Y&gclid=Cj0KCQjw2ZfABhDBARIsAHFTxGyjq5cZrrIdRTlEh4UHlL8EvVdcK-It-fCTZaVc24nIolNJvMPh4pwaAggDEALw_wcB" target="_blank" class="simulador-link">
+        <div class="contenido-simulador">
+      <h3>Soldamatic</h3>
+      <p><strong>Empresa:</strong> Seabery</p>
+      <p>Soldamatic, la solución de formación en soldadura para empresas y centros educativos. Forme a sus alumnos en menos tiempo y ahorrando costes con nuestro simulador de soldadura.</p>
+        </div>
+      </a>
+      </article>
+
+      <article class="simulador" data-keywords="fronius soldadura virtual welding formacion virtual">
+        <a href="https://www.fronius.com/es-es/spain/tecnologia-de-soldadura/el-mundo-de-la-soldadura/virtual-welding" target="_blank" class="simulador-link">
+        <div class="contenido-simulador">
+      <h3>Fronius – Virtual Welding</h3>
+      <p><strong>Empresa:</strong> Fronius</p>
+      <p>Convertirse en experto en soldadura con formación virtual.</p>
+        </div>
+      </a>
+      </article>
+
+      <article class="simulador" data-keywords="klk tech soldadura formacion realidad virtual">
+        <a href="https://www.klk.es/modulo-entrenamiento-virtual/" target="_blank" class="simulador-link">
+        <div class="contenido-simulador">
+      <h3>MEV by KLK</h3>
+      <p><strong>Empresa:</strong> Klk Tech</p>
+      <p>Nuestro sistema de formación a través de nuestra plataforma virtual ofrece una experiencia de usuario excelente tanto para dotar de recursos y conocimiento a equipos de trabajo  en cualquier parte del mundo como a  centros de formación para impartir una experiencia real en las practicas de sus alumnos antes de enfrentarse a una puesta a tierra real mediante soldadura aluminotérmica.</p>
+        </div>
+      </a>
+      </article>
+
+      <article class="simulador" data-keywords="simspray pintura revestimientos recubrimientos realidad virtual formacion">
+        <a href="https://simspray.net/es/" target="_blank" class="simulador-link">
+        <div class="contenido-simulador">
+      <h3>Formación de pintores en realidad virtual</h3>
+      <p><strong>Empresa:</strong> SimSpray</p>
+      <p>SimSpray es la herramienta líder de capacitación en realidad virtual para la industria de pintura y recubrimientos.</p>
+        </div>
+      </a>
+      </article>
+
+      <article class="simulador" data-keywords="simulador aplicacion pintura vrfp">
+        <a href="https://vrfp.es/simuladores/aplicacion-de-pintura/" target="_blank" class="simulador-link">
+        <div class="contenido-simulador">
+      <h3>Formación VR para aplicacion de pintura</h3>
+      <p><strong>Empresa:</strong> VRFP</p>
+      <p>Simulador de Realidad Virtual para aprender y practicar técnicas de pintura airless o con pistola en piezas de vehículos o superficies decorativas y a llevar a cabo recubrimientos de protección de manera correcta.
+
+.</p>
+        </div>
+      </a>
+      </article>
+
+          
+
+          
+
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn left">&#8249;</button>
+          <button class="carousel-btn right">&#8250;</button>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <!-- Mecánica, Metal y Fabricación Industrial -->
+<section class="sector mecanica">
+  <h2>Mecánica, Metal y Fabricación Industrial</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+      
+      <article class="simulador" data-keywords="ludus global entrenamiento puente grua maquinaria">
+        <a href="https://www.ludusglobal.com/puente-grua" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Entrenamientos  con maquinaria: Puente grua</h3>
+            <p><strong>Empresa:</strong> Ludus Global</p>
+            <p>Puente grúa es una simulación de Ludus orientada al entrenamiento en un entorno seguro del manejo de esta maquinaria.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="invelon mecanica fabricacion simulador ">
+        <a href="https://invelon.com/simulador-de-fabricacion-mecanica/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Simulador de Realidad Virtual para FP: Fabricación Mecánica</h3>
+            <p><strong>Empresa:</strong> Invelon</p>
+            <p>El simulador de Realidad Virtual para Fabricación Mecánica permite desarrollar conocimientos y habilidades de una forma segura y sin riesgo en ciclos formativos relacionados con la fabricación, montaje, mecanizado o moldeo de metales y polímeros.
+En el entorno inmersivo, los estudiantes adquieren experiencia mucho antes de visitar la planta, visualizando el entorno y familiarizándose con él. Gracias a la Realidad Virtual, podrán identificar las piezas, maquinaria y elementos, así como su configuración y su uso.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="ludus global entrenamiento puente grua maquinaria">
+        <a href="https://www.spacific.de/es/ra-en-ingenieria/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>La realidad aumentada en la ingeniería mecánica</h3>
+            <p><strong>Empresa:</strong> Spacific</p>
+            <p>Capturar la realidad con la mayor precisión posible, por un lado, y ser capaz de representar objetos complejos como se desee, por otro: estos dos pilares constituyen los ejemplos de aplicación de la realidad aumentada en ingeniería mecánica. Mientras que la solución de medición XR Scan de Spacific acelera y simplifica los procesos de producción mediante la creación de modelos 3D inteligentes con sólo pulsar un botón, las soluciones de visualización XR Scene App y XR Scene Web apoyan la formación, el mantenimiento, el montaje.</p>
+          </div>
+        </a>
+      </article>
+
+      
+      <article class="simulador" data-keywords="vrfp carretilla elevadora simulador ">
+        <a href="https://vrfp.es/simuladores/carretilla-elevadora-%c2%b7-basico/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion con Carretilla Elevadora</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>Gracias a este simulador formativo de Realidad Virtual, el alumnado asimila los conceptos básicos necesarios para la conducción de las diferentes carretillas elevadoras y realiza ejercicios de carga y descarga en entornos interiores y exteriores.
+
+* Para optimizar el realismo del simulador, se recomienda su uso con periféricos adicionales (volante, pedalera y panel de botones)</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp cuadros electricos simulador  ">
+        <a href="https://vrfp.es/simuladores/cuadros-electricos/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR con Cuadros Eléctricos</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>Diseñado para ofrecer una experiencia formativa completa, centrada en el aprendizaje, identificación, montaje y edición de cuadros eléctricos de baja tensión, cubriendo entornos domésticos, industriales y de instalaciones fotovoltaicas.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp media alta tension formacion">
+        <a href="https://vrfp.es/simuladores/trabajos-en-media-y-alta-tension/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR de trabajos en media y alta tension</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p></p>
+          </div>
+        </a>
+      </article>
+
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn left">&#8249;</button>
+      <button class="carousel-btn right">&#8250;</button>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+</section>
+
+    <!-- Robótica, Automatización y Electricidad -->
+    <section class="sector robotica">
+  <h2>Robótica, Automatización y Electricidad</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+
+    <article class="simulador" data-keywords="virtual4 automatizacion industria 4.0 ">
+        <a href="https://virtual4.tech/realidad-virtual-para-industria-4-0/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Realidad virtual en la industria 4.0</h3>
+            <p><strong>Empresa:</strong> Virtual4</p>
+            <p>La industria 4.0 es la cuarta revolución industrial, y está caracterizada por la automatización, la conectividad y el uso de tecnologías avanzadas. La realidad virtual puede jugar un papel importante en la industria 4.0, ya que puede utilizarse para mejorar la eficiencia, la seguridad y la formación.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="Docenzia robotica realidad virtual  master ">
+        <a href="https://docenzia.com/master-en-robotica-aplicada-y-realidad-virtual-add-digital?utm_source=chatgpt.com" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Master en Robótica Aplicada y Realidad Virtual - ADD Digital</h3>
+            <p><strong>Empresa:</strong> Docenzia</p>
+            <p>El Máster en Robótica y Realidad Virtual está dirigido a aquellas personas que se interesen en éste sector tecnológico e innovador y quieran aprender o profundizar sus conocimientos en la realidad virtual, robótica y realidad aumentada a través de modalidad semipresencial.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp centro transformacion simulador">
+        <a href="https://vrfp.es/simuladores/centro-de-transformacion/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion en Centro de Transformación</h3>
+            <p><strong>Empresa:</strong> VRFP</p>
+            <p>Este simulador incluye todas las tareas que deben realizarse para el mantenimiento en un centro de transformación de media y baja tensión, poniendo especial énfasis en la meticulosidad del protocolo y en las medidas de seguridad que se deben tener en cuenta durante el proceso.
+
+</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="simulador" data-keywords="vrfp simulador robotica colaborativa">
+        <a href="https://vrfp.es/simuladores/robotica-colaborativa/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR en robotica colaborativa</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>Este simulador permite al alumnado realizar diferentes operaciones con robots colaborativos de forma segura, flexible y fácil para aprender a automatizar y optimizar procesos industriales.</p>
+          </div>
+        </a>
+      </article>
+      
+
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn left">&#8249;</button>
+      <button class="carousel-btn right">&#8250;</button>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+</section>
+
+    <!-- Logística y Construcción -->
+    <section class="sector logistica">
+  <h2>Logística y Construcción</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+
+      <article class="simulador" data-keywords="logistica construccion carretilla almacen elevadora realidad virtual">
+        <a href="https://acfinnove.com/en-acf-innove-estrenamos-nueva-unidad-de-entrenamiento-virtual-virtual-training/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>AFCInnove virtual training</h3>
+            <p><strong>Empresa:</strong> AFCInnove</p>
+            <p>Plataforma de formación que reproduce las condiciones del mundo real y, como es móvil, puede ser trasladado a cualquier lugar de España.</p>
+          </div>
+        </a>
+      </article>
+
+
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn left">&#8249;</button>
+      <button class="carousel-btn right">&#8250;</button>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+</section>
+
+
+
+    <!-- Sanidad y Emergencias -->
+    <section class="sector sanidad">
+  <h2>Sanidad y Emergencias</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+    <article class="simulador" data-keywords="sanidad vr ar formacion alcala asistencia master emergencias">
+        <a href="https://www.formacionalcala.com/es/enfermeria/masters-online/master-de-formacion-permanente-en-asistencia-en-urgencias-y-emergencias-con-vr?utm_source=chatgpt.com" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Asistencia en Urgencias y Emergencias con VR</h3>
+            <p><strong>Empresa:</strong> FormacionAlcala</p>
+            <p>Máster de Formación Permanente en Asistencia en Urgencias y Emergencias con VR.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="ludus global primeros auxilios vr ar ">
+        <a href="https://www.ludusglobal.com/primeros-auxilios" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Simulacion VR primeros auxilios</h3>
+            <p><strong>Empresa:</strong> Ludus Global </p>
+            <p>Primeros auxilios es una formación de Ludus orientada a la atención inmediata en situaciones de emergencia.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp auxiliar enfermeria basica ">
+        <a href="https://vrfp.es/simuladores/auxiliar-de-enfermeria-tecnicas-basicas-i/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR para auxiliar en enfermeria basica</h3>
+            <p><strong>Empresa:</strong> VRFP</p>
+            <p>Simulador orientado a la formación de auxiliares de enfermería que permite la práctica de técnicas y procedimientos difícilmente realizables en un entorno educativo como la medición de constantes vitales o la movilización y el traslado de los pacientes.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp emergencias sanitarias simulador ">
+        <a href="https://vrfp.es/simuladores/emergencias-sanitarias/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR en emergencias sanitarias</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>Simulador que completa la formación de un técnico en emergencias sanitarias. En él, se recrean las actuaciones de diagnóstico y tratamiento que se deben llevar a cabo en situaciones de alta tensión como los accidentes de tráfico.
+
+</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp auxiliar enfermeria cuidado infantil ">
+        <a href="https://vrfp.es/simuladores/auxiliar-de-enfermeria-cuidado-infantil/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR para auxiliar de enfermeria: Cuidados infantiles</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>Simulador orientado a la formación de auxiliares de enfermería especializados en pacientes menores de un año que permite la práctica de técnicas difícilmente realizables en un entorno educativo como el cuidado de un recién nacido y la vacunación infantil.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="simulador" data-keywords="vrfp laboratorio farmaceutico ">
+        <a href="https://vrfp.es/simuladores/laboratorio-farmaceutico/" target="_blank" class="simulador-link">
+          <div class="contenido-simulador">
+            <h3>Formacion VR en laboratorio farmaceutico</h3>
+            <p><strong>Empresa:</strong>VRFP </p>
+            <p>A través de este simulador, el alumnado aprende el procedimiento a realizar para la fabricación de productos farmacéuticos y el uso de la maquinaria teniendo en cuenta medidas de seguridad como la vestimenta de protección.</p>
+          </div>
+        </a>
+      </article>
+
+
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn left">&#8249;</button>
+      <button class="carousel-btn right">&#8250;</button>
+    </div>
+    <div class="carousel-indicators"></div>
+  </div>
+</section>
+
+
+
+
+    <!-- Energías Renovables -->
+    <section class="sector renovables">
+      <h2>Energías Renovables</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+     
+
+<article class="simulador" data-keywords="rewoox energías renovables realidad virtual formación Rewoox">
+  <a href="https://www.rewoox.es/servicios/entrenadores-virtuales/" target="_blank" class="simulador-link">
+    <div class="contenido-simulador">
+      <h3>Entrenador Virtual en Energías Renovables</h3>
+      <p><strong>Empresa:</strong> Rewoox</p>
+      <p>Simulador en realidad virtual diseñado para la formación en procesos relacionados con las energías renovables</p>
+    </div>
+  </a>
+</article>
+        
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn left">&#8249;</button>
+          <button class="carousel-btn right">&#8250;</button>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <span>&copy; 2025 TechSkill</span>
+    <div class="social-links">
+      <a href="https://es.linkedin.com/company/techskill-consulting-sl" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/techskill_consulting/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://techskill.es/contact/" aria-label="Correo">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.youtube.com/@techskill-om2mh/videos" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
